@@ -1,0 +1,22 @@
+{
+  "comic": [
+    {
+      "id": 1,
+      "name": "The X-Men #4 (1995)",
+      "price": 1499,
+      "imgName": "comic2.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Once and Future #4",
+      "price": 999,
+      "imgName": "comic3.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Amazing Spiderman #1 ",
+      "price": 1999,
+      "imgName": "comic4.jpg"
+    }
+  ]
+}

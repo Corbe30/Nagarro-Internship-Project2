@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Corbe's Comic Books</title>
+
+        <link rel="stylesheet" href="styles.css" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <script src="https://checkout.stripe.com/checkout.js" defer></script>
+        <script src="store.js" defer></script>
+    </head>
+    <body>
+        <header class="main-header">
+            <nav class="nav main-nav">
+                <ul>
+
+                    <li><a href="index.html">
+                        <span class="material-icons">home</span>
+                    </a></li>
+
+                    <li><a href="store">
+                        <span class="material-icons">store</span>
+                    </a></li>
+
+                    <li><a href="cart">
+                        <span class="material-icons">local_grocery_store</span>
+                    </a></li>
+
+                </ul>
+            </nav>
+            <h1 class="band-name band-name-large">Corbe's Comic Books</h1>
+        </header>        <section class="container content-section">
+            <div class="shop-items">
+                <% items.comic.forEach(function(item){ %>
+                    <div class="shop-item" data-item-id="<%= item.id %>">
+                        
+                        <img class="shop-item-image" src="Images/<%= item.imgName %>">
+                        <div  class="shop-item-name" style="color:black"><b><%= item.name %></b></div>
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">₹<%= item.price %></span>
+                            <button class="btn btn-primary shop-item-button" type="button"><span class="material-icons"">local_grocery_store</span></button>
+                        </div>
+                    </div>
+                <% }) %>
+            </div>
+        </section>
+    </body>
+</html>

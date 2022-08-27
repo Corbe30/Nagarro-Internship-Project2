@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Corbe's Comic Books</title>
+
+        <link rel="stylesheet" href="styles.css" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <script src="https://checkout.stripe.com/checkout.js" defer></script>
+        <script>
+            var stripePublicKey = '<%= stripePublicKey %>'
+        </script>
+        <script src="cart.js" defer></script>
+    </head>
+    <body>
+        <header class="main-header">
+            <nav class="nav main-nav">
+                <ul>
+
+                    <li><a href="index.html">
+                        <span class="material-icons">home</span>
+                    </a></li>
+
+                    <li><a href="store">
+                        <span class="material-icons">store</span>
+                    </a></li>
+
+                    <li><a href="cart">
+                        <span class="material-icons">local_grocery_store</span>
+                    </a></li>
+
+                </ul>
+            </nav>
+            <h1 class="band-name band-name-large">Corbe's Comic Books</h1>
+        </header>
+        
+        <section class="container content-section">
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        </section>
+    </body>
+</html>
