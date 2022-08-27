@@ -5,4 +5,4 @@ This is the final project at Nagarro Summer Internship. It is an e-commerce webs
 ✅ Add to Cart feature
 ✅ Working payment option with Stripe
 
-The Stripe public and private key were hidden by declaring those environment variables in Heroku itself.
+The Stripe public and private key were hidden by declaring those environment variables in Heroku itself. Cart feature was implemented using localStorage.
